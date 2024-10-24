@@ -29,5 +29,9 @@ print(f"Hay {contadormayores} pacientes mayores de 40 años, y {contadormenores}
 
 # 2- Crea un diccionario que contenga el número de pacientes por diagnóstico. Por ejemplo, si hay tres pacientes con "gripe y dos con "fractura", el diccionario debería verse así: {"gripe}: 3, "fractura": 2}.
 diagnósticos = {}
+contador = 1
+
 for id, paciente in listaPaciente.items():
-    
+    diagnósticos[paciente['Diagnóstico']] = contador
+
+print(diagnósticos)
